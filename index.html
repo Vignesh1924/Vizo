@@ -206,20 +206,17 @@
 
     <div class="container">
 
-        <!-- SCREEN 0: COUNTDOWN -->
         <div id="screen-countdown" class="screen active">
             <h1>UNENCRYPTING RECOVERY VAULT</h1>
-            <p>Access Granted On July 13, 2026</p>
+            <p>Access Granted On July 6, 2026</p>
             <div id="countdown-display">00d 00h 00m 00s</div>
         </div>
 
-        <!-- SCREEN 1: THE GATEWAY -->
         <div id="screen-gateway" class="screen">
             <h1>ARE U EXCITED TO ENTER?</h1>
             <button id="btn-continue">CONTINUE</button>
         </div>
 
-        <!-- SCREEN 2: QUESTION 1 (Happy for Friend) -->
         <div id="screen-q1" class="screen">
             <div class="card">
                 <h2>QUESTION 1</h2>
@@ -229,13 +226,9 @@
             </div>
         </div>
 
-        <!-- SCREEN 3: QUESTION 2 (Email Rating) -->
         <div id="screen-q2" class="screen">
-            <!-- FormSubmit routes data securely directly to your email box -->
             <form id="rating-form" action="https://formsubmit.co/sv2965970@gmail.com" method="POST">
-                <!-- Disables captcha for smoother UI workflow -->
                 <input type="hidden" name="_captcha" value="false">
-                <!-- Redirects back to nothing, handled seamlessly in JS override -->
                 <input type="hidden" name="_next" value="about:blank">
                 
                 <div class="card">
@@ -250,7 +243,6 @@
             </form>
         </div>
 
-        <!-- SCREEN 4: PENGUIN INTERACTIVE CLICKER -->
         <div id="screen-penguin" class="screen">
             <div class="card">
                 <h2>THE FINAL DOORWAY</h2>
@@ -271,8 +263,8 @@
     </div>
 
     <script>
-        // TARGET DEADLINE DETECTOR
-        const targetDate = new Date("June 11, 2026 00:00:00").getTime();
+        // TARGET DEADLINE DETECTOR - Updated to July 13, 2026
+        const targetDate = new Date("July 6, 2026 00:00:00").getTime();
 
         function runClockPipeline() {
             const now = new Date().getTime();
